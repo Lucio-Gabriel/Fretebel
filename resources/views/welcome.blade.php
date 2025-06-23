@@ -20,15 +20,14 @@
         @endif
     </head>
     <body class="bg-gray-50 min-h-screen">
-    <!-- Header -->
     <header class="bg-white shadow-sm border-b">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
                 <div class="flex items-center">
-                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">W</span>
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <x-svg.truck class="w-6 h-6 text-white" />
                     </div>
-                    <span class="ml-3 text-xl font-semibold text-gray-900">Welcome</span>
+                    <span class="ml-3 text-xl font-semibold text-gray-900">Fretebel</span>
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#" class="text-gray-500 hover:text-primary transition-colors">Login</a>
@@ -38,13 +37,10 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="text-center">
             <div class="mx-auto w-24 h-24 bg-primary rounded-full flex items-center justify-center mb-8">
-                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3.5M3 16.5h18"></path>
-                </svg>
+                <x-svg.truck class="w-12 h-12 text-white" />
             </div>
 
             <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -53,7 +49,7 @@
             </h1>
 
             <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                Descubra uma nova maneira de trabalhar, colaborar e crescer. Nossa plataforma oferece todas as ferramentas que você precisa para alcançar seus objetivos.
+                Descubra uma nova maneira de conseguir e trabalhar com fretes, contratar e trabalhar. Nossa plataforma oferece todas as ferramentas que você precisa para alcançar seus objetivos.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -66,13 +62,10 @@
             </div>
         </div>
 
-        <!-- Features Grid -->
         <div class="mt-20 grid md:grid-cols-3 gap-8">
             <div class="text-center p-6 bg-white rounded-xl shadow-sm border">
                 <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
+                   <x-svg.flash class="w-8 h-8 text-primary"/>
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Rápido e Eficiente</h3>
                 <p class="text-gray-600">Otimize seu tempo com nossa interface intuitiva e ferramentas poderosas.</p>
@@ -80,9 +73,7 @@
 
             <div class="text-center p-6 bg-white rounded-xl shadow-sm border">
                 <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                    </svg>
+                   <x-svg.security class="w-8 h-8 text-primary" />
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Seguro e Confiável</h3>
                 <p class="text-gray-600">Seus dados estão protegidos com a mais alta tecnologia de segurança.</p>
@@ -90,16 +81,13 @@
 
             <div class="text-center p-6 bg-white rounded-xl shadow-sm border">
                 <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                    </svg>
+                    <x-svg.persons class="w-8 h-8 text-primary" />
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-2">Colaboração</h3>
                 <p class="text-gray-600">Trabalhe em equipe de forma mais eficiente com nossas ferramentas colaborativas.</p>
             </div>
         </div>
 
-        <!-- Stats Section -->
         <div class="mt-20 bg-primary rounded-2xl p-8 text-white">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold mb-4">Números que Impressionam</h2>
@@ -126,7 +114,6 @@
             </div>
         </div>
 
-        <!-- CTA Section -->
         <div class="mt-20 text-center bg-white rounded-2xl p-12 shadow-sm border">
             <h2 class="text-3xl font-bold text-gray-900 mb-4">Pronto para Começar?</h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -143,8 +130,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-20">
+    <footer class="bg-primary text-white mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
@@ -186,7 +172,7 @@
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Welcome. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Welcome. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
