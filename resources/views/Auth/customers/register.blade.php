@@ -24,7 +24,7 @@
                                     <x-svg.user class="w-5 h-5 text-primary" />
                                     Cliente
                                 </div>
-                                <a href="{{ route('login-driver') }}"
+                                <a href="{{ route('register-driver') }}"
                                     class="flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors text-gray-600 hover:text-gray-900">
                                     <x-svg.truck class="w-6 h-6 text-primary" />
                                     Motorista
@@ -33,11 +33,31 @@
                         </div>
 
                         <form>
+                            <div id="name-field" class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome
+                                    completo</label>
+                                <div class="relative">
+                                    <input type="text" id="name" placeholder="Seu nome completo"
+                                        class="w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+
                             <div class="mb-4">
                                 <label for="email"
                                     class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
                                 <div class="relative">
+                                    <i data-lucide="mail" class="absolute left-3 top-3 h-4 w-4 text-gray-400"></i>
                                     <input type="email" id="email" placeholder="seu@email.com" required
+                                        class="w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+
+                            <div id="phone-field" class="mb-4">
+                                <label for="phone"
+                                    class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                                <div class="relative">
+                                    <i data-lucide="phone" class="absolute left-3 top-3 h-4 w-4 text-gray-400"></i>
+                                    <input type="tel" id="phone" placeholder="(11) 99999-9999"
                                         class="w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                                 </div>
                             </div>
@@ -45,6 +65,7 @@
                             <div class="mb-4">
                                 <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Senha</label>
                                 <div class="relative">
+                                    <i data-lucide="lock" class="absolute left-3 top-3 h-4 w-4 text-gray-400"></i>
                                     <input type="password" id="password" placeholder="Sua senha" required
                                         class="w-full pl-3 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                                 </div>
@@ -57,8 +78,8 @@
                         </form>
 
                         <div class="text-center mt-4">
-                            <a href="{{ route('register-customer') }}" class="text-blue-600 hover:text-blue-700 text-sm">
-                                Não tem conta? Cadastre-se
+                            <a href="{{ route('login-customer') }}" class="text-blue-600 hover:text-blue-700 text-sm">
+                                Já possui uma conta? Faça login
                             </a>
                         </div>
                     </div>

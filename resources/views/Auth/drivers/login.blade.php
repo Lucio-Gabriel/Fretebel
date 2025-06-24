@@ -57,9 +57,9 @@
                         </form>
 
                         <div class="text-center mt-4">
-                            <button class="text-blue-600 hover:text-blue-700 text-sm">
+                            <a href="{{ route('register-driver') }}" class="text-blue-600 hover:text-blue-700 text-sm">
                                 Não tem conta? Cadastre-se
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
