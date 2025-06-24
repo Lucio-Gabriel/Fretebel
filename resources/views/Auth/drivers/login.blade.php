@@ -19,16 +19,16 @@
                         <div class="mb-6">
                             <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de usuário</label>
                             <div class="grid grid-cols-2 gap-2 p-1 bg-gray-100 rounded-lg">
-                                <div
-                                    class="flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium select-none transition-colors bg-white text-gray-900 shadow-sm">
+                                <a href="{{ route('login-customer') }}"
+                                    class="flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors  text-gray-600  shadow-sm">
                                     <x-svg.user class="w-5 h-5 text-primary" />
                                     Cliente
-                                </div>
-                                <a href="{{ route('login-driver') }}"
-                                    class="flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium transition-colors text-gray-600 hover:text-gray-900">
+                                </a>
+                                <div
+                                    class="flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm font-medium select-none transition-colors bg-white hover:text-gray-900">
                                     <x-svg.truck class="w-6 h-6 text-primary" />
                                     Motorista
-                                </a>
+                                </div>
                             </div>
                         </div>
 

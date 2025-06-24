@@ -30,7 +30,7 @@
                     <span class="ml-3 text-xl font-semibold text-gray-900">Fretebel</span>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-500 hover:text-primary transition-colors">Login</a>
+                    <a href="{{ route('login-customer') }}" wire:navigate class="text-gray-500 hover:text-primary transition-colors">Login</a>
                     <a href="#" class="text-gray-500 hover:text-primary transition-colors">Register</a>
                 </nav>
             </div>
